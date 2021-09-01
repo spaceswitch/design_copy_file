@@ -1,0 +1,254 @@
+/* all */
+* {
+  list-style: none;
+  text-decoration: none;
+}
+/* body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* header */
+header {
+  max-width: 1600px;
+  width: 100%;
+  height: 95px;
+  background-color: #fff;
+  font-family: "Bodoni URW";
+}
+/* header_nav */
+.header_nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 95px;
+  display: flex;
+}
+.group01,
+.group02 {
+  width: 460px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+.group01 ul,
+.group02 ul {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.group01 p,
+.group02 p {
+  margin: 0;
+  line-height: 95px;
+  font-size: 15px;
+  margin: 0 25px;
+  letter-spacing: 0.2em;
+  color: #333;
+}
+/* header_logo */
+.header_logo {
+  box-sizing: border-box;
+  width: 280px;
+  height: 95px;
+  text-align: center;
+}
+.header_logo h1 {
+  font-size: 36px;
+  letter-spacing: 0.2em;
+  line-height: 95px;
+  margin: 0;
+  color: #333;
+}
+
+/* top_wrapper */
+.top_wrapper {
+  position: relative;
+  max-width: 1600px;
+  height: auto;
+  margin-bottom: 125px;
+  padding: 0 30px;
+}
+/* top_img */
+.top_img img {
+  max-width: 1600px;
+  width: 100%;
+  height: 710px;
+}
+/* top_msg */
+.top_msg {
+  padding-left: 290px;
+  position: absolute;
+  top: 270px;
+  text-align: center;
+}
+/* .top_msg {
+  position: absolute;
+  top: 40%;
+  left: 24%;
+  transform: translate(-40%, -24%);
+} */
+.top_msg h1 {
+  margin: 0;
+  color: #fff;
+  font-size: 186px;
+  font-family: SignPainter;
+  line-height: 1;
+  letter-spacing: 0.025em;
+  transform: rotate(-5deg);
+}
+.text{
+  /* text-align: center; */
+  margin: 0;
+  color: #333;
+}
+.text01 {
+  font-family: "FOT-マティス ProN";
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0.2em;
+  margin-bottom: 50px;
+  position: relative;
+  top: -30px;
+}
+.text02 {
+  width: 200px;
+  margin: 0 auto;
+  font-family: "Futura PT";
+  font-size: 18px;
+  line-height: 1;
+  letter-spacing: 0.1em;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #333;
+  position: relative;
+  top: -30px;
+}
+/* content_wrapper */
+.content_wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+.content_box {
+  box-sizing: border-box;
+  width: 731px;
+  position: relative;
+}
+.box1 {
+  background-color: #e2e2e2;
+  width: 700px;
+  height: 570px;
+  position: absolute;
+  left: 30px;  
+  z-index: 10;
+}
+.box2 {
+  background-color: #f5f0e9;
+  width: 690px;
+  height: 600px;
+  position: absolute;
+  top: 50px;
+}
+/* content_msg */
+.content_msg {
+  box-sizing: border-box;
+  width: 469px;
+  padding-top: 60px;
+  padding-left: 87px;
+  color: #333;
+}
+.content_text01 {
+  font-size: 20px;
+  line-height: 1.9;
+  letter-spacing: 0.2em;
+  font-family: Futura;
+  margin: 0;
+}
+.content_msg h2 {
+  font-size: 64px;
+  line-height: 1.3;
+  letter-spacing: 0.1em;
+  font-family: Didot;
+  margin: 0;
+}
+.content_text02 {
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0.3em;
+  font-family: 游明朝体;
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+.content_text03 {
+  font-size: 15px;
+  line-height: 1.6;
+  letter-spacing: 0.05em;
+  font-family: "Futura PT";
+  margin: 0;
+  padding-bottom: 7px;
+  border-bottom: 1px solid #333;
+  width: fit-content;
+}
+
+/* Arrows custam */
+#slider {
+  padding: 0;
+}
+button{
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+.slide-arrow{
+  position: absolute;
+  top: 50%;
+  margin-top: -15px;
+}
+.prev-arrow{
+  left: 40px;
+  /* 矢印の変更 */
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 0px;
+  border-bottom: solid 2px #333;
+  border-left: solid 2px #333;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  /* /////矢印の変更 */
+  /* width: 0;
+  height: 0;
+  border-left: 0 solid transparent;
+  border-right: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; */
+  z-index: 10;
+}
+.next-arrow{
+  right: 40px;
+  /* 矢印の変更 */
+  content: '';
+  width: 20px;
+  height: 20px;
+  border: 0px;
+  border-top: solid 2px #333;
+  border-right: solid 2px #333;
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  /* /////矢印の変更 */
+  /* width: 0;
+  height: 0;
+  border-right: 0 solid transparent;
+  border-left: 15px solid #113463;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent; */
+  z-index: 10;
+}
